@@ -1,4 +1,93 @@
-h1 {
-    color: blue;
-    font-size: 32px;
-}
+* {
+    font-family: 'Fira Sans', sans-serif;
+  }
+  
+  body {
+   background-image: url("assets/bulldog.jpg");
+   background-color: #F0ECEE;
+  }
+  
+  .navigation ul {
+    list-style-type: none;
+  }
+  
+  .navigation li {
+    display: inline-block;
+    float: right;
+    padding: 10px;
+    position: relative;
+    right: 40px;
+    font-size: 18px;
+  }
+  
+  .navigation li a {
+    color: #88898B;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .navigation li a:hover {
+    background-color: #FF4850;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    height: 40px;
+  }
+  
+  h3 {
+    font-weight: 600;
+  }
+  
+  #adoptMe {
+    position: relative;
+    left: 40px;
+    top: 57px;
+  }
+  
+  #friend {
+    position: relative;
+    top: 200px;
+    left: 40px;
+    width: 450px;
+    font-weight: 900;
+  }
+  
+  #buddy {
+    position: relative;
+    left: 40px;
+    top: 200px;
+    width: 520px;
+    font-size: 19px;
+  }
+  
+  p {
+    color: #88898B;
+  }
+  
+  mark.red {
+    color: #FF4850;
+    background: none;
+  }
+  
+  .button {
+    position: relative;
+    left: 40px;
+    top: 220px;
+    padding: 10px; 
+    border-radius: 5px;
+    color: white;
+    background-color: #FF4850;
+    float: left;
+    font-weight: 300px;
+    width: 190px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: bottom;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: #CCC;
+  }
+  
