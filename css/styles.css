@@ -1,148 +1,127 @@
 * {
-    font-family: 'Fira Sans', sans-serif;
-  }
-  
-    body {
-    background-color: #F0ECEE;
- }
-  
-  .flex-container {
-    display: flex;
-  }
+  font-family: 'Fira Sans', sans-serif;
+}
 
+body {
+  background-color: #F0ECEE;
+}
+
+/* Element resets and globals */
+
+h1, h2, ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #88898B;
+}
+
+a:hover {
+  color: #68696B;
+}
+
+h1 {
+  font-weight: 900;
+  line-height: 1.5em;
+}
+
+p {
+  color: #88898B;
+  line-height: 1.4em;
+}
+
+
+/* Styling structure */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.logo {
+  margin: 0;
+}
+
+.navigation ul {
+  list-style-type: none;
+  line-height: 1.5em;
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 600px;
+}
+
+.container {
+  padding: 30px 0;
+}
+
+.call-to-action {
+  margin-bottom: 10px;
+}
+
+/* Components */
+
+.red {
+  color: #FF4850;
+}
+
+.button {
+  margin-top: 15px;
+  background-color: #FF4850;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #CCC;
+}
+
+/* Desktop display version */
+
+@media (min-width: 768px) {
+  
+  body {
+    padding: 20px 30px;
+  }
+  
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
   .navigation ul {
-    list-style-type: none;
-    width: 100%;
+    display: flex;
+    align-items: center;
   }
   
-  .navigation li {
-    display: inline-block;
-    padding: 10px;
-    position: relative;
-    right: 40px;
-    height: 10px;
-    line-height: normal;
-    font-size: 18px;
-    justify-content: center;
-    flex-wrap: nowrap;
+  .navigation ul li {
+    padding: 0 10px;
   }
   
-  .navigation li a {
-    color: #88898B;
-    text-decoration: none;
-    padding: 10px;
-    width: 100%;
-  }
-  
-  .navigation li a:hover {
-    background-color: #FF4850;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    height: 40px;
-  }
-  
-  #adoptMe {
-    position: relative;
-    top: 57px;
-  }
-  
-  #friend {
-    position: relative;
-    top: 200px;
-    width: 100%;
-    font-weight: 900;
-    max-width: 450px;
-  }
-  
-  #buddy {
-    position: relative;
-    top: 200px;
-    width: 100%;
-    font-size: 14px;
-  }
-  
-  p {
-    color: #88898B;
-  }
-  
-  mark.red {
-    color: #FF4850;
-    background: none;
-  }
-  
-  .button {
-    position: relative;
-    top: 220px;
-    padding: 10px; 
-    border-radius: 5px;
-    color: white;
-    background-color: #FF4850;
-    float: left;
-    font-weight: 300px;
-    width: 100%;
-    height: 30px;
-    font-size: 18px;
-    text-align: center;
-    vertical-align: bottom;
-    text-decoration: none;
-  }
-  
-  .button:hover {
-    background-color: #CCC;
-  }
-  
-  @media (min-width: 768px) {
-      
-    body {
-      background-image: url("/assets/bulldog.jpg");
-      background-color: #F0ECEE;
-      background-size: cover;
-    } 
-    
-    #adoptMe {
-      left: 40px;
-      font-size: 18px;
-      font-weight: 600px;
-      color: black;
-    }
-    
-    #friend {
-      left: 40px;
-      width: auto;
-    }
-    
-    #buddy {
-      left: 40px;
-      width: auto;
-      line-height: 1;
-      font-size: 18px;
-    }
-    
-    .button {
-      text-align: center;
-      width: auto;
-      top: 200px;
-      left: 40px;
-      padding: 10px;
-      float: none;
-      display: block;
-      position: relative;
-      border-radius: 5px;
-      color: white;
-      float: left;
-      font-weight: 300px;
-      line-height: 30px;
-      font-size: 18px;
-      text-decoration: none;
-    }
-    
-    .navigation li {
-      display: flex;
-      padding: 10px;
-      font-size: 18px;
-      float: right;
-      justify-content: center;
+  .navigation ul .button {
+    margin: 0;
   }
     
+  .container {
+    background-image: url("/assets/bulldog.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 650px;  
+  } 
+  
+  .content {
+    margin-top: 120px;
+    width: 500px;
   }
+  
+  .find-out-how {
+    width: 200px;
+  }
+ 
+}
